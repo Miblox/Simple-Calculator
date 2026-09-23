@@ -1,7 +1,7 @@
 # Simple Calculator
 import sys
 import time
-from logic import plusss, minusss, multiplicationn, divisionn
+from logic import plusss, minusss, multiplicationn, divisionn, divisionnn
 
 a = 0
 b = 0
@@ -14,7 +14,7 @@ while True:
     try:
 
         choicee = ["+", "-", "*", ":"]
-        choice_input = input("Выбери что надо сделать: +, -, *, :,  ")
+        choice_input = input("Выбери что надо сделать: +, -, *, //, /.  ")
 
 # функции в logic.py для изменения кода исопльзуете этот файл
 
@@ -27,8 +27,11 @@ while True:
         elif choice_input == "*":
             multiplicationn()
 
-        elif choice_input == ":":
+        elif choice_input == "//":
             divisionn()
+
+        elif choice_input == "/":
+            divisionnn()
 
         else:
             print("В базе калькулятора нет такого или поддержка не добавлена")
