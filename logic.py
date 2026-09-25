@@ -1,105 +1,131 @@
 def plusss():
     while True:
         try:
-            a = int(input("Введите число 1:  "))
+            a = int(input("Enter the number 1:  "))
         except ValueError:
-            print("Веедены направильные данные введите ЧИСЛО!")
+            print("Invalid data has been entered!")
             continue
 
         
 
         try:
-            b = int(input("Введите число 2: "))
+            b = int(input("Enter the number 2: "))
         except ValueError:
-            print("введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
 
         
 
         pluss = a + b
-        print(f"Ответ равен {pluss}")
+        print(f"The answer equals  {pluss}")
         return
 
 def minusss():
     while True:
         try:
-            a = int(input("Введите число 1: "))
+            a = int(input("Enter the number 1: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
         
         try:
-            b = int(input("Введите число 2: "))
+            b = int(input("Enter the number 2: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
 
         
         minuss = a - b
-        print(f"Ответ равен {minuss}")
+        print(f"The answer equals  {minuss}")
         return
 
 def multiplicationn(): 
     while True:
         try:
-            a = int(input("Введите число 1: "))
+            a = int(input("Enter the number 1: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
         
         try:
-            b = int(input("Введите число 2: "))
+            b = int(input("Enter the number 2: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
 
         
         answer = a * b
-        print(f"Ответ: {answer}")    
+        print(f"The answer equals : {answer}")    
         return
 
 def divisionn():
     while True:
         try:
-            a = int(input("Введите число 1: "))
+            a = int(input("Enter the number 1: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
         
         try:
-            b = int(input("Введите число 2: "))
+            b = int(input("Enter the number 2: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
 
         
         try:
             answer = a // b
         except ZeroDivisionError:
-            print("На ноль делить нельзя")
+            print("You can't divide by zero.")
             return
-        print(f"Ответ: {answer}")    
+        print(f"The answer equals : {answer}")    
         return  
 
 def divisionnn():
     while True:
         try:
-            a = int(input("Введите число 1: "))
+            a = int(input("Enter the number 1: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
         
         try:
-            b = int(input("Введите число 2: "))
+            b = int(input("Enter the number 2: "))
         except ValueError:
-            print("Введены неверные данные!")
+            print("Invalid data has been entered!")
             continue
 
         
         try:
             answer = a / b
         except ZeroDivisionError:
-            print("На ноль делить нельзя")
+            print("You can't divide by zero.")
             return
-        print(f"Ответ: {answer}")    
+        print(f"The answer equals : {answer}")    
         return
+
+def Degree():
+    while True:
+        try:
+            a = int(input("Enter the number 1: "))
+        except ValueError:
+            print("Invalid data has been entered!")
+            continue
+        
+        try:
+            b = int(input("Enter the number 2: "))
+        except ValueError:
+            print("Invalid data has been entered!")
+            continue
+
+        try:
+            answer = a ** b  
+        except ZeroDivisionError:
+            print("Нельзя возводить ноль в отрицательную степень")
+            return
+        
+        print(f"The answer equals : {answer}") 
+
+        return
+
+

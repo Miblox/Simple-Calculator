@@ -1,70 +1,39 @@
 # Simple Calculator
 import sys
 import time
-from logic import plusss, minusss, multiplicationn, divisionn, divisionnn
+from logic import plusss, minusss, multiplicationn, divisionn, divisionnn, Degree
 
 a = 0
 b = 0
 
-print("Добро пожаловать в калькулятор! нажмите CTRL+C чтобы закрыть программу")
+print("Welcome to the calculator! Press CTRL+C to close the program.")
 # Сама программа
 
 while True:
 
     try:
 
-        choicee = ["+", "-", "*", ":"]
-        choice_input = input("Выбери что надо сделать: +, -, *, //, /.  ")
+        choice_input = input("Choose the operation to perform: +, -, *, //, /, **.  ").strip()
 
 # функции в logic.py для изменения кода исопльзуете этот файл
 
-        if choice_input == "+":
-            plusss()
+        operations = {
+            "+": plusss,
+            "-": minusss,
+            "*": multiplicationn,
+            "/": divisionnn,
+            "//": divisionn,
+            "**": Degree
+        }
 
-        elif choice_input == "-":
-            minusss()
-
-        elif choice_input == "*":
-            multiplicationn()
-
-        elif choice_input == "//":
-            divisionn()
-
-        elif choice_input == "/":
-            divisionnn()
+        if choice_input in operations:
+            operations[choice_input]()
 
         else:
-            print("В базе калькулятора нет такого или поддержка не добавлена")
+            print("This item is not in the calculator's database, or support for it has not been added.")
 
 
     except KeyboardInterrupt:
-        print("\n Выходим...")
+        print("\nExiting...")
         time.sleep(3)
         sys.exit()
-
-
-
-# while True:
-#    try:
-#        user_input = int(input("Введите число 1:  "))
-#    except ValueError:
-#        print("Веедены направильные данные введите ЧИСЛО!")
-#        continue
-#
-#   a += user_input
-#
-#    try:
-#        user_input22 = int(input("Введите число 2: "))
-#    except ValueError:
-#        print("введены неверные данные!")
-#        continue
-#
-#    b += user_input22
-#
-#    pluss = a + b
-#    print(f"Ответ равен {pluss}")
-
-
-
-
-# 67 SIX SEVEN!!

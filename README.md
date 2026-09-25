@@ -1,19 +1,23 @@
 # Simple-Calculator
 
-**Это калькултор он умеет выплнять 5 действий: + - * // и /**
+**This calculator can perform 6 operations: `+` `-` `*` `//` `/` and `**`.**
 
-## Как использовать
+## How to Use
 
-- намите на файл main.py или simple-calc.exe или main.exe в завиимости где скачали или скомпилировали
-- выберите действие или действия
-- при завершении испольузете CTRL+C
+- Click on the file main.py, simple-calc.exe, or main.exe, depending on where you downloaded it from or whether you compiled it yourself
+- Select an operation, for example, +
+- To exit, press CTRL+C
 
-**Данное ПО не умеет выполнять сложые примеры типа (12+12) - (5+5)= но вы можете по очереди с порядком действия считать**
+**This software cannot handle complex expressions such as (12+12) - (5+5) =, but you can calculate them step by step following the order of operations**
 
-### Компиляция
-- установите pyinstaller
-- выполните в CMD это: pyinstaller -onefile main.py (Зависимости от logic подтянутся сами)
-- в dist/ найдете main.exe (или если вы на Linux вроде bin файл)
+### Compilation
+- Install PyInstaller using the command `python -m pip install pyinstaller`
+- Run the following in CMD: `pyinstaller --onefile main.py` (Dependencies from `logic` will be added automatically)
+- You’ll find `main.exe` (or a `bin` file if you’re on Linux) in the `dist/` directory
 
-### Лицензия
+### What’s New?
+- **Exponentiation added**
+- **Code optimized**
+
+### License
 **MIT License**
