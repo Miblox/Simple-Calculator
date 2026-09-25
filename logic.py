@@ -121,7 +121,7 @@ def Degree():
         try:
             answer = a ** b  
         except ZeroDivisionError:
-            print("Нельзя возводить ноль в отрицательную степень")
+            print("You cannot raise zero to a negative power")
             return
         
         print(f"The answer equals : {answer}") 
