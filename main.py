@@ -1,10 +1,10 @@
 # Simple Calculator
 import sys
 import time
-from logic import plusss, minusss, multiplicationn, divisionn, divisionnn, Degree
+from logic import plusss, minusss, multiplicationn, divisionn, divisionnn, Degree, percent
 
-a = 0
-b = 0
+# a = 0
+# b = 0 
 
 print("Welcome to the calculator! Press CTRL+C to close the program.")
 # Сама программа
@@ -13,7 +13,7 @@ while True:
 
     try:
 
-        choice_input = input("Choose the operation to perform: +, -, *, //, /, **.  ").strip()
+        choice_input = input("Choose the operation to perform: +, -, *, //, /, **, %.  ").strip()
 
 # функции в logic.py для изменения кода исопльзуете этот файл
 
@@ -23,7 +23,8 @@ while True:
             "*": multiplicationn,
             "/": divisionnn,
             "//": divisionn,
-            "**": Degree
+            "**": Degree,
+            "%": percent
         }
 
         if choice_input in operations:
